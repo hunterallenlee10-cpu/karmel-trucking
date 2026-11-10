@@ -111,6 +111,7 @@ body {
 
 .tnum {
   font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 /* Survey-stake label text: Public Sans caps with tabular figures. */

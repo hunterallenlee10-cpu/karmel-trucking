@@ -54,13 +54,14 @@ _Review notes: gallery capped at 12 with "Show all" (it was 5,300px tall at desk
 - [x] Reviews: giant Erin T. pull quote with "Only company out of 6" in green; 6 review cards with initial avatars; score tiles (100% Facebook, 4.6 Thumbtack) with source links; CTA
 
 ## Phase 4: Area, FAQ, CTA band, Contact, Footer, /contact, /ai
-- [ ] Service area: grayscale Google Maps iframe (no key) + green pin; ZIP checker (206/207); town chips
-- [ ] FAQ accordion (8 items)
-- [ ] Final CTA band: photo 02, dark overlay, max 70vh, "GOT DIRT THAT NEEDS MOVING?"
-- [ ] "Still have questions?" block: phone, email, Facebook, 3-field form with success state
-- [ ] Footer: wordmark, description, NAP, email, Facebook, anchors, payment methods, © 2026, "Concept preview by Lee Enterprises Unlimited."
-- [ ] `/contact`: hero strip, inline estimate form, map, NAP, CTA band, footer; lands at top
-- [ ] `/ai`: plain semantic facts page
+_Review notes: "MECHANICSVILLE." overflowed its column at 1440, so the heading now spans full width; phone numbers no longer wrap on mobile._
+- [x] Service area: grayscale Google Maps iframe (no key) + green pin; ZIP checker (206/207); town chips
+- [x] FAQ accordion (8 items)
+- [x] Final CTA band: photo 02, dark overlay, max 70vh, "GOT DIRT THAT NEEDS MOVING?"
+- [x] "Still have questions?" block: phone, email, Facebook, 3-field form with success state
+- [x] Footer: wordmark, description, NAP, email, Facebook, anchors, payment methods, © 2026, "Concept preview by Lee Enterprises Unlimited."
+- [x] `/contact`: hero strip, inline estimate form, map, NAP, CTA band, footer; lands at top
+- [x] `/ai`: plain semantic facts page
 
 ## Phase 5: Estimate modal
 - [ ] 4 steps with green progress bar and slide transitions: needs (multi-select tiles), property, timing (+ photo previews, notes), your info
