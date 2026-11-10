@@ -89,7 +89,7 @@ Responsive: no horizontal scroll at 375 / 768 / 1024 / 1440 on all pages; tablet
 - [x] One CTA ("Get a Free Estimate"), working from the nav, hero, after the proof sections, the final band and the contact page
 - [x] No em dashes or "--" in the copy; 2 fonts; 3 colours; motion only in hero + process
 - [x] Footer present with the concept line; noindex set
-- [x] Lighthouse ≥ 90 mobile; 375px looks deliberate, not squeezed
+- [x] Lighthouse ≥ 90 mobile (Perf, A11y, Best Practices; SEO is held at 66 only by the required noindex, 100 without it); 375px looks deliberate, not squeezed
 
 ## Ship
 - [ ] Push to GitHub
