@@ -19,7 +19,7 @@ export const business = {
   county: "St. Mary's County",
   region: "Southern Maryland",
   facebook: "https://www.facebook.com/p/Karmel-Trucking-Excavating-LLC-100064619487292/",
-  thumbtack: "https://www.thumbtack.com/",
+  thumbtack: "https://www.thumbtack.com/md/mechanicsville/excavation/karmel-trucking-excavating-llc/service/426519719942086667",
   payments: ["Cash", "Check", "Credit card", "PayPal", "Venmo", "Zelle"],
   latestJob: "40 tons of double-ground millings, spread and rolled",
 } as const;

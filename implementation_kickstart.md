@@ -45,12 +45,13 @@ _Review notes: fixed unlayered `.photo` CSS overriding `absolute` (photos collap
 - [x] Process: pinned ~250vh on desktop, green cut line drawn by scroll, photo per step (03, 11, 13, 20, 09); mobile vertical timeline; reduced-motion fallback
 
 ## Phase 3: Our Work, Calculator, Reviews
-- [ ] Filter chips: All, Land Clearing, Grading & Pads, Drainage, Driveways, Pools, Demolition, Hardscape
-- [ ] Masonry grid of photos 01 to 37, lazy webp
-- [ ] Lightbox: swipe, arrow keys, Esc, caption + category
-- [ ] 2 pinned featured tiles: "Erosion stopped for good" (25, Amanda M.) and "The drainage problem 5 other companies missed" (29, Erin T.)
-- [ ] Calculator: material select, L/W/depth with presets 2/3/4/6, cubic yards + tons (factors 1.4 / 1.4 / 1.3 / 1.2, mulch yards only), 10% toggle, small print, prefilled CTA, 40-ton easter egg chip
-- [ ] Reviews: giant Erin T. pull quote with "Only company out of 6" in green; 6 review cards with initial avatars; score tiles (100% Facebook, 4.6 Thumbtack) with source links; CTA
+_Review notes: gallery capped at 12 with "Show all" (it was 5,300px tall at desktop); Thumbtack score links to their real profile._
+- [x] Filter chips: All, Land Clearing, Grading & Pads, Drainage, Driveways, Pools, Demolition, Hardscape
+- [x] Masonry grid of photos 01 to 37, lazy webp
+- [x] Lightbox: swipe, arrow keys, Esc, caption + category
+- [x] 2 pinned featured tiles: "Erosion stopped for good" (25, Amanda M.) and "The drainage problem 5 other companies missed" (29, Erin T.)
+- [x] Calculator: material select, L/W/depth with presets 2/3/4/6, cubic yards + tons (factors 1.4 / 1.4 / 1.3 / 1.2, mulch yards only), 10% toggle, small print, prefilled CTA, 40-ton easter egg chip
+- [x] Reviews: giant Erin T. pull quote with "Only company out of 6" in green; 6 review cards with initial avatars; score tiles (100% Facebook, 4.6 Thumbtack) with source links; CTA
 
 ## Phase 4: Area, FAQ, CTA band, Contact, Footer, /contact, /ai
 - [ ] Service area: grayscale Google Maps iframe (no key) + green pin; ZIP checker (206/207); town chips
