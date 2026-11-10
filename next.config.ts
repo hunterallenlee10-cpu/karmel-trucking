@@ -16,7 +16,7 @@ const nextConfig: NextConfig = {
     // pre-built file, so no runtime image optimization is needed.
     loader: "custom",
     loaderFile: "./lib/image-loader.ts",
-    deviceSizes: [480, 828, 1200],
+    deviceSizes: [480, 640, 828, 1200],
     imageSizes: [240],
   },
 };

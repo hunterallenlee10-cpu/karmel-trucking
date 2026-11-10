@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useCallback, useContext, useMemo, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import type { EstimateService } from "@/lib/site";
 import { EstimateModal } from "./EstimateModal";
 
@@ -28,6 +28,17 @@ export function EstimateProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const value = useMemo(() => ({ open }), [open]);
+
+  // Warm the form chunk once the page is idle, so the first open is instant.
+  useEffect(() => {
+    const warm = () => void import("./EstimateForm");
+    if (typeof window.requestIdleCallback === "function") {
+      const id = window.requestIdleCallback(warm, { timeout: 4000 });
+      return () => window.cancelIdleCallback(id);
+    }
+    const t = setTimeout(warm, 3000);
+    return () => clearTimeout(t);
+  }, []);
 
   return (
     <EstimateCtx.Provider value={value}>

@@ -64,28 +64,32 @@ _Review notes: "MECHANICSVILLE." overflowed its column at 1440, so the heading n
 - [x] `/ai`: plain semantic facts page
 
 ## Phase 5: Estimate modal
-- [ ] 4 steps with green progress bar and slide transitions: needs (multi-select tiles), property, timing (+ photo previews, notes), your info
-- [ ] Esc / overlay close, focus trap, friendly inline validation
-- [ ] Success screen + "Call now"; `TODO` for n8n webhook
-- [ ] Wired to every CTA (nav, hero, after proof sections, calculator prefill, final band, contact page)
+- [x] 4 steps with green progress bar and slide transitions: needs (multi-select tiles), property, timing (+ photo previews, notes), your info
+- [x] Esc / overlay close, focus trap, friendly inline validation
+- [x] Success screen + "Call now"; `TODO` for n8n webhook
+- [x] Wired to every CTA (nav, hero, after proof sections, calculator prefill, final band, contact page)
 
 ## Phase 6: Metadata, SEO, QA
-- [ ] Title, description, canonical, Open Graph, Twitter `summary_large_image`
-- [ ] `og-image.png` 1200×630 (photo 02 + wordmark + "Free Estimates · (240) 412-7476"), favicon, `apple-touch-icon.png`
-- [ ] `noindex, nofollow` robots (comment: remove at launch)
-- [ ] LocalBusiness + GeneralContractor JSON-LD site-wide (aggregateRating only with a cited source)
-- [ ] One H1, H2 per section
-- [ ] Lighthouse mobile ≥ 90 on all four categories; fix what it flags
-- [ ] Contrast AA (darker green for text on light backgrounds)
-- [ ] Responsive pass at 375 / 768 / 1024 / 1440 with screenshots, no horizontal scroll
+_Lighthouse mobile (production build, 3 runs): Home Perf 90-91 · A11y 100 · BP 100 · SEO 66. /contact Perf 93-96. /ai Perf 99-100.
+SEO 66 is entirely the required `noindex` (audit "is-crawlable"); with that audit skipped every page scores SEO 100, which is the launch score once noindex is removed.
+Perf fixes: hover-only service photos mount on first hover; photos just below the hero mount when near the viewport; 240 and 640 webp sizes for thumbnails and the mobile hero; estimate form code loads on idle/first open; Archivo served as the single 900 / 125%-width Google Fonts instance (14 KB vs 88 KB) via next/font/local, since next/font/google cannot request one weight with the width axis; lighter contour texture.
+Responsive: no horizontal scroll at 375 / 768 / 1024 / 1440 on all pages; tablet ticket moved into the copy column._
+- [x] Title, description, canonical, Open Graph, Twitter `summary_large_image`
+- [x] `og-image.png` 1200×630 (photo 02 + wordmark + "Free Estimates · (240) 412-7476"), favicon, `apple-touch-icon.png`
+- [x] `noindex, nofollow` robots (comment: remove at launch)
+- [x] LocalBusiness + GeneralContractor JSON-LD site-wide (aggregateRating only with a cited source)
+- [x] One H1, H2 per section
+- [x] Lighthouse mobile ≥ 90 on all four categories; fix what it flags
+- [x] Contrast AA (darker green for text on light backgrounds)
+- [x] Responsive pass at 375 / 768 / 1024 / 1440 with screenshots, no horizontal scroll
 
 ## Final self-review
-- [ ] Only real photos from the Drive folder; zero stock or AI images
-- [ ] Every fact traces to VERIFIED BUSINESS FACTS; all [CONFIRM] items listed in CONFIRM.md
-- [ ] One CTA ("Get a Free Estimate"), working from the nav, hero, after the proof sections, the final band and the contact page
-- [ ] No em dashes or "--" in the copy; 2 fonts; 3 colours; motion only in hero + process
-- [ ] Footer present with the concept line; noindex set
-- [ ] Lighthouse ≥ 90 mobile; 375px looks deliberate, not squeezed
+- [x] Only real photos from the Drive folder; zero stock or AI images
+- [x] Every fact traces to VERIFIED BUSINESS FACTS; all [CONFIRM] items listed in CONFIRM.md
+- [x] One CTA ("Get a Free Estimate"), working from the nav, hero, after the proof sections, the final band and the contact page
+- [x] No em dashes or "--" in the copy; 2 fonts; 3 colours; motion only in hero + process
+- [x] Footer present with the concept line; noindex set
+- [x] Lighthouse ≥ 90 mobile; 375px looks deliberate, not squeezed
 
 ## Ship
 - [ ] Push to GitHub

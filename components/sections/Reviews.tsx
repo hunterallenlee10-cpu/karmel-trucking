@@ -25,8 +25,8 @@ export function Reviews() {
               &ldquo;
             </span>
             <blockquote
-              className="mt-2 text-[clamp(1.55rem,3.4vw,3.1rem)] leading-[1.12] font-extrabold tracking-[-0.015em] text-limestone"
-              style={{ fontFamily: "var(--font-archivo)", fontStretch: "110%" }}
+              className="mt-2 text-[clamp(1.55rem,3.4vw,3.1rem)] leading-[1.12] font-black tracking-[-0.015em] text-limestone"
+              style={{ fontFamily: "var(--font-archivo)", fontStretch: "125%" }}
             >
               <p>
                 {pre}

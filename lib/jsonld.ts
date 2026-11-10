@@ -20,7 +20,7 @@ export const localBusinessJsonLd = {
   },
   areaServed: { "@type": "AdministrativeArea", name: business.region },
   paymentAccepted: business.payments.join(", "),
-  sameAs: [business.facebook],
+  sameAs: [business.facebook, business.thumbtack],
   description:
     "Land clearing, grading, drainage, demolition and bulk stone, millings and topsoil delivery in Southern Maryland. Free estimates.",
   // Source: Thumbtack profile, 4.6 average from 7 reviews (verified business facts, Nov 2026).

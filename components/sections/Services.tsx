@@ -11,10 +11,15 @@ import { Modal } from "@/components/ui/Modal";
 import { Reveal } from "@/components/ui/Reveal";
 import { ServiceIcon } from "@/components/ui/ServiceIcon";
 import { StakeLabel } from "@/components/ui/StakeLabel";
+import { WhenNear } from "@/components/ui/WhenNear";
 
 export function Services() {
   const [active, setActive] = useState<Service | null>(null);
   const [open, setOpen] = useState(false);
+
+  // Hover photos only load once a card is hovered or focused, so they never compete with the hero.
+  const [awake, setAwake] = useState<Set<string>>(() => new Set());
+  const wake = (id: string) => setAwake((a) => (a.has(id) ? a : new Set(a).add(id)));
 
   const show = (s: Service) => {
     setActive(s);
@@ -48,7 +53,7 @@ export function Services() {
                 className="group relative block aspect-[5/4] w-full md:aspect-[4/5] overflow-hidden rounded-[var(--radius)] bg-asphalt text-left text-limestone"
                 aria-label={`${s.title}: learn more`}
               >
-                <div className="photo absolute inset-0">
+                <WhenNear className="photo absolute inset-0">
                   <Image
                     src={s.photo!.src}
                     alt={s.photo!.alt}
@@ -56,7 +61,7 @@ export function Services() {
                     sizes="(min-width: 768px) 33vw, 100vw"
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                   />
-                </div>
+                </WhenNear>
                 <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-asphalt via-asphalt/45 to-transparent" />
                 <div className="absolute inset-x-0 top-0 flex items-center justify-between p-5">
                   <span className="stake tnum text-limestone/85">0{i + 1}</span>
@@ -88,10 +93,12 @@ export function Services() {
               <button
                 type="button"
                 onClick={() => show(s)}
+                onPointerEnter={(e) => e.pointerType === "mouse" && wake(s.id)}
+                onFocus={() => wake(s.id)}
                 className="group relative flex h-full min-h-[184px] w-full flex-col overflow-hidden rounded-[var(--radius)] bg-card-light p-5 text-left transition-colors"
                 aria-label={`${s.title}: learn more`}
               >
-                {s.photo ? (
+                {s.photo && awake.has(s.id) ? (
                   <div className="photo absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-focus-visible:opacity-100">
                     <Image src={s.photo.src} alt="" fill sizes="(min-width: 1024px) 25vw, 50vw" className="object-cover" />
                     <div className="absolute inset-0 bg-asphalt/70" />

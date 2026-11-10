@@ -35,7 +35,7 @@ export function Nav() {
         }`}
       />
       <nav aria-label="Main" className="relative mx-auto flex h-16 max-w-[1440px] items-center gap-6 px-4 sm:h-[72px] sm:px-6 lg:px-10">
-        <Link href="/" className="shrink-0" aria-label="Karmel Trucking & Excavating, home">
+        <Link href="/" className="shrink-0">
           <Wordmark className="h-7 w-auto sm:h-9" />
         </Link>
 

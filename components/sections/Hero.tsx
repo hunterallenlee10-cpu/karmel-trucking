@@ -8,6 +8,7 @@ import { business, proof } from "@/lib/site";
 import { p } from "@/lib/photos";
 import { EstimateButton } from "@/components/ui/EstimateButton";
 import { StakeLabel } from "@/components/ui/StakeLabel";
+import { WhenNear } from "@/components/ui/WhenNear";
 
 const SLIDES = [p("01"), p("03"), p("05")];
 const WORDS = ["CLEAR IT.", "GRADE IT.", "DRAIN IT.", "HAUL IT."];
@@ -58,7 +59,7 @@ export function Hero() {
                   fill
                   preload={i === 0}
                   fetchPriority={i === 0 ? "high" : "low"}
-                  sizes="(min-width: 1024px) 45vw, 100vw"
+                  sizes="(min-width: 1024px) 45vw, 88vw"
                   className="object-cover"
                   style={{
                     transform: !reduce && slide === i ? "scale(1.05)" : "scale(1)",
@@ -74,7 +75,7 @@ export function Hero() {
         </div>
 
         {/* Floating "job ticket" overlapping the photo's bottom-left. */}
-        <div className="absolute bottom-6 left-4 z-10 hidden w-[340px] sm:block lg:bottom-14 lg:-left-16 xl:-left-24">
+        <div className="absolute z-10 hidden w-[340px] lg:bottom-14 lg:-left-16 lg:block xl:-left-24">
           <JobTicket />
         </div>
 
@@ -149,9 +150,9 @@ export function Hero() {
           </li>
         </ul>
 
-        <div className="mt-8 sm:hidden">
+        <WhenNear className="mt-8 min-h-[120px] max-w-sm lg:hidden" margin="0px">
           <JobTicket />
-        </div>
+        </WhenNear>
       </div>
     </section>
   );

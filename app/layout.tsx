@@ -1,15 +1,23 @@
 import type { Metadata, Viewport } from "next";
-import { Archivo, Public_Sans } from "next/font/google";
+import { Public_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import { Providers } from "@/components/Providers";
 import { localBusinessJsonLd } from "@/lib/jsonld";
 import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
-const archivo = Archivo({
-  subsets: ["latin"],
-  axes: ["wdth"],
+// Display face: Archivo Black at 125% width, the only style the design uses.
+// It is the exact Google Fonts instance (fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,900,
+// latin subset), self-hosted through next/font/local because next/font/google cannot request a
+// single weight together with the width axis. 14 KB instead of the 88 KB full variable font.
+const archivo = localFont({
+  src: "./fonts/archivo-900-expanded-latin.woff2",
+  weight: "900",
+  style: "normal",
+  declarations: [{ prop: "font-stretch", value: "125%" }],
   variable: "--font-archivo",
   display: "swap",
+  fallback: ["Arial Black", "system-ui", "sans-serif"],
 });
 
 const publicSans = Public_Sans({

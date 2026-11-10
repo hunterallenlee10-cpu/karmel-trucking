@@ -9,7 +9,7 @@ export function Footer() {
       <div className="wrap">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <Link href="/" aria-label="Karmel Trucking & Excavating, home" className="inline-block">
+            <Link href="/" className="inline-block">
               <Wordmark className="h-12 w-auto" />
             </Link>
             <p className="mt-6 max-w-sm text-limestone/75">

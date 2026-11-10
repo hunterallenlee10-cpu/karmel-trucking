@@ -1,6 +1,7 @@
 // Converts every job photo in public/images/raw to webp (quality 80) at
-// 480, 828 and 1200 wide. Never upscales: if the source is narrower than a
-// bucket, that bucket is written at the source width.
+// 480, 828 and 1200 wide, plus a 240 thumbnail for small UI (job ticket,
+// frames) and a 640 size that keeps the mobile hero light. Never upscales:
+// if the source is narrower than a bucket, it is written at the source width.
 //
 // Output: public/images/<name>-<bucket>.webp  (e.g. 01-hero-...-828.webp)
 // Also writes lib/image-manifest.json with each photo's real size, so
@@ -15,7 +16,7 @@ import path from "node:path";
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const RAW = path.join(ROOT, "public/images/raw");
 const OUT = path.join(ROOT, "public/images");
-const BUCKETS = [480, 828, 1200];
+const BUCKETS = [240, 480, 640, 828, 1200];
 
 // Brand reference files are not displayed on the site.
 const SKIP = /^00-/;
@@ -38,7 +39,7 @@ for (const file of files) {
     await sharp(src)
       .rotate()
       .resize({ width: w, withoutEnlargement: true })
-      .webp({ quality: 80 })
+      .webp({ quality: 80, effort: 6 })
       .toFile(path.join(OUT, `${name}-${bucket}.webp`));
   }
   console.log(`✓ ${name} (${width}×${height})`);

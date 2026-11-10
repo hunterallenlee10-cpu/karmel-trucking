@@ -2,7 +2,13 @@
 
 import { Modal } from "@/components/ui/Modal";
 import type { EstimatePrefill } from "./EstimateContext";
-import { EstimateForm } from "./EstimateForm";
+import dynamic from "next/dynamic";
+
+// The form code loads on first open (or when the browser is idle), not with the first paint.
+const EstimateForm = dynamic(() => import("./EstimateForm").then((m) => m.EstimateForm), {
+  ssr: false,
+  loading: () => <div className="h-[420px]" aria-busy="true" />,
+});
 
 type Props = {
   open: boolean;
