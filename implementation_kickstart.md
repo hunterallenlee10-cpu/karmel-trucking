@@ -92,5 +92,5 @@ Responsive: no horizontal scroll at 375 / 768 / 1024 / 1440 on all pages; tablet
 - [x] Lighthouse ≥ 90 mobile (Perf, A11y, Best Practices; SEO is held at 66 only by the required noindex, 100 without it); 375px looks deliberate, not squeezed
 
 ## Ship
-- [ ] Push to GitHub
-- [ ] Deploy on Vercel via Git import, confirm READY, share URL
+- [x] Push to GitHub (branch `claude/vibrant-albattani-ia8tzt` on `hunterallenlee10-cpu/karmel-trucking`; this session could not create a new `karmel-trucking-concept` repo)
+- [x] Deploy on Vercel via Git import (project `karmel-trucking-concept`, team leu), READY: https://karmel-trucking-concept.vercel.app
