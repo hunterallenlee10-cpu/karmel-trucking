@@ -100,10 +100,7 @@ export function Hero() {
           <span className="block">the earth</span>
           <span className="sr-only">. Clear it, grade it, drain it, haul it.</span>
           <span aria-hidden="true" className="relative block h-[1em] overflow-hidden text-green">
-            {reduce ? (
-              <span className="block">{WORDS[0]}</span>
-            ) : (
-              <AnimatePresence initial={false} mode="popLayout">
+            <AnimatePresence initial={false} mode="popLayout">
                 <m.span
                   key={WORDS[word]}
                   className="block"
@@ -114,8 +111,7 @@ export function Hero() {
                 >
                   {WORDS[word]}
                 </m.span>
-              </AnimatePresence>
-            )}
+            </AnimatePresence>
           </span>
         </h1>
 

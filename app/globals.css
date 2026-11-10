@@ -81,6 +81,24 @@ body {
 }
 
 @layer components {
+  /* Page container: 1440 max, 16 / 24 / 40px gutters. */
+  .wrap {
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+  @media (min-width: 640px) {
+    .wrap {
+      padding-inline: 1.5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .wrap {
+      padding-inline: 2.5rem;
+    }
+  }
+
 /* ── Type ── */
 .font-display {
   font-family: var(--font-display);
@@ -184,7 +202,4 @@ body {
   height: 100vh;
   border: 0;
   background: transparent;
-}
-.ba-range:focus-visible {
-  outline: none;
 }

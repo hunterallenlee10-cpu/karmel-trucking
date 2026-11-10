@@ -35,14 +35,14 @@ _Review notes: fixed unlayered `.photo` CSS overriding `absolute` (photos collap
 - [x] `npm run dev`, Playwright screenshots at 1440 and 390, critical review, improve
 
 ## Phase 2: Services, Before/After, Process
-- [ ] Proof marquee (7 Facebook reviewer names + stars, slow, pause on hover)
-- [ ] Services: 3 featured cards (Land Clearing 05, Grading & Drainage 20, Driveways & Millings 07)
-- [ ] Secondary grid of 8 (Excavation & Footings 31, Demolition 26, Pool Removal & Fill 18, Pads 27, Trenching 23, Stump Grinding 04, Perc Testing icon only, Bulk Material Delivery 06)
-- [ ] "Also:" line (Snow plowing 36, Seasonal lawn care)
-- [ ] Service "Learn more" modal: 3 bullet reasons + CTA (no redirects, no prices)
-- [ ] Before/After slider 15 ↔ 17, keyboard + labelled range input, green grip handle
-- [ ] Before / During / After frames (15, 16, 18) and Wayne E. Thumbtack mini case study; CTA
-- [ ] Process: pinned ~250vh on desktop, green cut line drawn by scroll, photo per step (03, 11, 13, 20, 09); mobile vertical timeline; reduced-motion fallback
+- [x] Proof marquee (7 Facebook reviewer names + stars, slow, pause on hover)
+- [x] Services: 3 featured cards (Land Clearing 05, Grading & Drainage 20, Driveways & Millings 07)
+- [x] Secondary grid of 8 (Excavation & Footings 31, Demolition 26, Pool Removal & Fill 18, Pads 27, Trenching 23, Stump Grinding 04, Perc Testing icon only, Bulk Material Delivery 06)
+- [x] "Also:" line (Snow plowing 36, Seasonal lawn care)
+- [x] Service "Learn more" modal: 3 bullet reasons + CTA (no redirects, no prices)
+- [x] Before/After slider 15 ↔ 17, keyboard + labelled range input, green grip handle
+- [x] Before / During / After frames (15, 16, 18) and Wayne E. Thumbtack mini case study; CTA
+- [x] Process: pinned ~250vh on desktop, green cut line drawn by scroll, photo per step (03, 11, 13, 20, 09); mobile vertical timeline; reduced-motion fallback
 
 ## Phase 3: Our Work, Calculator, Reviews
 - [ ] Filter chips: All, Land Clearing, Grading & Pads, Drainage, Driveways, Pools, Demolition, Hardscape
