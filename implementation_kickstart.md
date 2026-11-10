@@ -20,18 +20,19 @@ Rules that apply to every phase:
 ## Phase 0: Setup and assets
 - [x] Download all 40 files from Drive folder `16DAGt_AJF6XHMANvsaUZ2Hj0MTtRwSNG` into `public/images/raw/` with exact names
 - [x] Create `implementation_kickstart.md` (this file) and `CONFIRM.md`; commit before UI
-- [ ] `scripts/optimize-images.mjs` (sharp): webp q80 at 480 / 828 / 1200, never upscale past source
-- [ ] Sample the logo green and lock the colour token
+- [x] `scripts/optimize-images.mjs` (sharp): webp q80 at 480 / 828 / 1200, never upscale past source
+- [x] Sample the logo green and lock the colour token
 
 ## Phase 1: Scaffold, tokens, Nav, Hero
-- [ ] Next.js scaffold, Tailwind tokens (`--asphalt`, `--limestone`, `--karmel-green`, neutrals), 8px grid, 6px radius
-- [ ] Fonts via `next/font/google`: Archivo (900, stretch 125%), Public Sans (400/500/600), tabular numbers
-- [ ] SVG wordmark (KARMEL + TRUCKING & EXCAVATING + green rule), K monogram favicon
-- [ ] Texture: topographic contour SVG (4 to 6% opacity), survey-stake section labels, film grain (3%)
-- [ ] Image data module with alt text for every photo ("... in Southern Maryland")
-- [ ] Nav: sticky, transparent over hero then solid after 80px; anchors; phone link; Free Estimate button; mobile full-screen sheet
-- [ ] Hero: 55/45 split, photo crossfade 01 → 03 → 05 every 6s with 1.05 drift, slot-roll headline (CLEAR IT. / GRADE IT. / DRAIN IT. / HAUL IT.), sub, CTA, trust row, "latest job" ticket card; mobile photo on top at 60vh
-- [ ] `npm run dev`, Playwright screenshots at 1440 and 390, critical review, improve
+_Review notes: fixed unlayered `.photo` CSS overriding `absolute` (photos collapsed), tightened headline size so THE EARTH holds one line at 1440, nowrap mobile nav CTA, added survey coordinates tag._
+- [x] Next.js scaffold, Tailwind tokens (`--asphalt`, `--limestone`, `--karmel-green`, neutrals), 8px grid, 6px radius
+- [x] Fonts via `next/font/google`: Archivo (900, stretch 125%), Public Sans (400/500/600), tabular numbers
+- [x] SVG wordmark (KARMEL + TRUCKING & EXCAVATING + green rule), K monogram favicon
+- [x] Texture: topographic contour SVG (4 to 6% opacity), survey-stake section labels, film grain (3%)
+- [x] Image data module with alt text for every photo ("... in Southern Maryland")
+- [x] Nav: sticky, transparent over hero then solid after 80px; anchors; phone link; Free Estimate button; mobile full-screen sheet
+- [x] Hero: 55/45 split, photo crossfade 01 → 03 → 05 every 6s with 1.05 drift, slot-roll headline (CLEAR IT. / GRADE IT. / DRAIN IT. / HAUL IT.), sub, CTA, trust row, "latest job" ticket card; mobile photo on top at 60vh
+- [x] `npm run dev`, Playwright screenshots at 1440 and 390, critical review, improve
 
 ## Phase 2: Services, Before/After, Process
 - [ ] Proof marquee (7 Facebook reviewer names + stars, slow, pause on hover)
